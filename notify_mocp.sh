@@ -12,7 +12,7 @@ cd "$LAST"
 IMG=`find *.jpg -type f`
 SONGTITLE=$(mocp -Q %song)
 ARTIST=$(mocp -Q %artist)
-FILE=$(mocp -Q %file)
+FILE=$(echo `mocp -i|grep File:|cut -d '/' -f 6`)
 #ESTADO=$(mocp -Q %state) 
 
 
