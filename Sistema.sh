@@ -1,4 +1,9 @@
 #!/bin/bash
+#12/01/2018
+#Creado por Tarrasquero.
+#IRC: Freenode. Channels: #debian-es; #devuan-mx; #archlinux-es.
+#Puedes mejorarlo?. Házmelo saber: yopuebla@gmail.com
+#Screenshot: https://imagebin.ca/v/3o3UAdOpAO63
 #Muestra el menu general
 clear
 function _menuPrincipal(){
