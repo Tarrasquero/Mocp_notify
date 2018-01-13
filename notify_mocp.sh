@@ -12,8 +12,9 @@ cd "$LAST"
 IMG=`find *.jpg -type f`
 SONGTITLE=$(mocp -Q %song)
 ARTIST=$(mocp -Q %artist)
+FILE=$(mocp -Q %file)
 #ESTADO=$(mocp -Q %state) 
-#FILE=$(mocp -Q %file)
+
 
 if [ "$SONGTITLE" ]; then
     notify-send --icon="$LAST/$IMG" "$ARTIST:" "$SONGTITLE"
