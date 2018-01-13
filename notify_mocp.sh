@@ -15,8 +15,10 @@ ARTIST=$(mocp -Q %artist)
 #ESTADO=$(mocp -Q %state) 
 #FILE=$(mocp -Q %file)
 
-if [ -f ]; then
+if [ "$SONGTITLE" ]; then
     notify-send --icon="$LAST/$IMG" "$ARTIST:" "$SONGTITLE"
+    else
+    notify-send --icon="$LAST/$IMG" "$FILE" #Para musica sin metadatos
 fi
 
 exit
