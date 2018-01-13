@@ -11,7 +11,7 @@ function _menuPrincipal(){
     echo "|*Bienvenido*                                                  |"
     echo "|1) Para Hacer cambios en el sistema elija esta opcion         |"
     echo "|2) Para Buscar o listar Paquetes upgradables elija esta opcion|"
-    echo "|Q) Salir                                                      |"
+    echo "|0) Salir                                                      |"
     echo "################################################################"
     echo -n "Indica una opcion:"
 }
@@ -24,7 +24,7 @@ function _submenu1(){
     echo "|4) Para Actualizar el Sistema       |"
     echo "|5) Para Hacer Limpieza              |"
     echo "|6) Eliminar Paquetes                |"
-    echo "|7) Salir                            |"
+    echo "|0) Salir                            |"
     echo "######################################"
     echo -n "Indica una opcion:"
 }
@@ -33,7 +33,7 @@ function _submenu2(){
     echo "################################"
     echo "|1) Buscar Paquetes            |"
     echo "|2) Listar Paquetes upgradables|"
-    echo "|3) Salir                      |"
+    echo "|0) Salir                      |"
     echo "################################"
     echo -n "Indica una opcion:"
 }
@@ -116,7 +116,7 @@ read opc2
 done
 _menuPrincipal
 ;;
-q)
+0)
 break
 _menuPrincipal
 ;;
