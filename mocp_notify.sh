@@ -5,7 +5,7 @@
 #IRC: Freenode. Channels: #debian-es; #devuan-mx; #archlinux-es.
 #Puedes mejorarlo?. Házmelo saber: yopuebla@gmail.com
 #Configuración en config
-#OnSongChange = "/home/$USER/configuracion/notify_mocp.sh %t %a"
+#OnSongChange = "$HOME/scripts/mocp_notify.sh %t %a"
 PWD=$HOME/Musica
 LAST=$(echo "$PWD/`mocp -i|grep File:|cut -d '/' -f 5`")
 cd "$LAST"
