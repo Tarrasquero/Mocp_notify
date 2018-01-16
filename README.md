@@ -1,5 +1,5 @@
 # Scripts
-Dependencias: mat, libnotify-bin.
+Dependencias: mat, imagemagick, libnotify-bin.
 Novedades: Redimensionado de imagenes a 100x100
 Configuración para notificación de mocp: 
 #apt-get install mat imagemagick libnotify-bin
