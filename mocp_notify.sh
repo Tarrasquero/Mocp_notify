@@ -8,7 +8,7 @@
 #OnSongChange = "$HOME/scripts/mocp_notify.sh %a %t %f"
 #SONG=$(mocp -Q %song)
 #ARTIST=$(mocp -Q %artist)
-#FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
+FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
 PWD=$HOME/Musica/
 LAST=$(echo "$PWD/`mocp -i|grep File:|cut -d '/' -f 5`")
 cd "$LAST"
@@ -27,6 +27,6 @@ fi
 if [ "$2" ]; then
     notify-send -i "$IMG" "$1:" "$2" 
 else 
-    notify-send --icon="$IMG" "$3" #Para musica sin metadatos
+    notify-send --icon="$IMG" "$FILE" #Para musica sin metadatos
 fi
 exit
