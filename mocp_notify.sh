@@ -8,6 +8,7 @@
 #OnSongChange = "$HOME/scripts/mocp_notify.sh %a %t %f"
 PWD=$HOME/Musica
 LAST=$(echo "$PWD/`mocp -i|grep File:|cut -d '/' -f 5`")
+cd "$LAST"
 IMG0=`find *.jpg -type f`
 cp "$LAST/$IMG0" "/tmp/cover.jpg"
 IMG=/tmp/cover.jpg
