@@ -6,10 +6,13 @@
 #Puedes mejorarlo?. Házmelo saber: yopuebla@gmail.com
 #Configuración en config
 #OnSongChange = "$HOME/scripts/mocp_notify.sh %a %t %f"
-PWD=$HOME/Musica
+SONG=$(mocp -Q %song)
+ARTIST=$(mocp -Q %artist)
+FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
+PWD=$HOME/Musica/
 LAST=$(echo "$PWD/`mocp -i|grep File:|cut -d '/' -f 5`")
 cd "$LAST"
-IMG0=`find *.jpg -type f`
+IMG0=$(find *.jpg -type f)
 cp "$LAST/$IMG0" "/tmp/cover.jpg"
 IMG=/tmp/cover.jpg
 X=$(mat --display "$IMG"|grep "Exif Image Width:"|cut -d ' ' -f 4)
@@ -22,9 +25,8 @@ if [ $i != $GEOMETRY ]; then
 fi    
 
 if [ "$2" ]; then
-    notify-send -i "$IMG" "$1:" "$2"
-else    
-    notify-send --icon="$IMG" "$3" #Para musica sin metadatos
+    notify-send -i "$IMG" "$1:" "$2" 
+else 
+    notify-send --icon="$IMG" "$FILE" #Para musica sin metadatos
 fi
-
 exit
