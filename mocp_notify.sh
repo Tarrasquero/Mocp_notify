@@ -1,8 +1,7 @@
 #!/bin/sh
 #12/01/2018
 #Creado por Tarrasquero. 
-#Screenshot https://imagebin.ca/v/3nz5mRqmdvoZ
-#IRC: Freenode. Channels: #debian-es; #devuan-mx; #archlinux-es.
+#IRC: Freenode. Channels: #debian-es; #devuan-mx.
 #Puedes mejorarlo?. Házmelo saber: yopuebla@gmail.com
 #Configuración en config
 #OnSongChange = "$HOME/scripts/mocp_notify.sh %a %t %f"
