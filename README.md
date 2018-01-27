@@ -16,6 +16,8 @@ Redimensionado de imágenes a 100x100.
  
 Extraer `/usr/share/doc/moc/example/config.example.gz` en `~/.moc` con el nombre `config`.  
 
+Otorgar permisos de ejecución:  `chmod +x mocp_notify.sh`
+
 Buscar la linea: `#OnSongChange=` que debería quedar parecida a esta: `OnSongChange= "$HOME/scripts/mocp_notify.sh %a %t %f"` 
 
 ## Bugs:
