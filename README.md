@@ -11,6 +11,7 @@
 ## Novedades:
 
 Redimensionado de imágenes a 100x100.
+Soportado varios formatos de imagen para la notificación 
 
 ## Configuración para notificación de mocp:
 
@@ -24,4 +25,4 @@ Buscar la linea: `#OnSongChange=` que debería quedar parecida a esta: `OnSongCh
 
 ## Bugs:
 
-Lástima que en los álbumes de varios CDs la imagen a mostrar tiene que estar en la raíz del álbum en si. _La raíz del álbum puede contener solo un `.jpg` para mostrar en la notificación._
+Lástima que en los álbumes de varios CDs la imagen a mostrar tiene que estar en la raíz del álbum en si.~~La raíz del álbum puede contener solo un `.jpg` para mostrar en la notificación.~~
