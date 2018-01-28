@@ -16,6 +16,3 @@ coveralbum.jpeg
 Front.jpg
 Front.png
 Front.jpeg
-jpg
-png
-jpeg
