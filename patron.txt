@@ -1,0 +1,12 @@
+cover.jpg
+cover.png
+cover.jpeg
+coverart.jpg
+coverart.png
+coverart.jpeg
+covershmall.jpg
+covershmall.png
+covershmall.jpeg
+*.jpg
+*.png
+*.jpeg
