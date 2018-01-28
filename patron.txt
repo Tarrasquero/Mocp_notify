@@ -13,6 +13,9 @@ AlbumArtSmall.jpeg
 coveralbum.jpg
 coveralbum.png
 coveralbum.jpeg
+Front.jpg
+Front.png
+Front.jpeg
 jpg
 png
 jpeg
