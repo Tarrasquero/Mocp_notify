@@ -10,9 +10,9 @@
 
 ## Novedades:
 
--Redimensionado de imágenes a 100x100.
+- Redimensionado de imágenes a 100x100.
 
--Soportado varios formatos de imagen para la notificación 
+- Soportado varios formatos de imagen para la notificación 
 
 ## Configuración para notificación de mocp:
 
