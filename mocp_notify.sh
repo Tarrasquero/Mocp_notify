@@ -4,7 +4,7 @@
 #IRC: Freenode. Channels: #debian-es; #devuan-mx.
 #Puedes mejorarlo?. Házmelo saber: yopuebla@gmail.com
 #Configuración en config
-#OnSongChange = "$HOME/scripts/mocp_notify.sh %a %t %f"
+#OnSongChange = "$HOME/.moc/scripts/mocp_notify.sh %a %t %f"
 #SONG=$(mocp -Q %song)
 #ARTIST=$(mocp -Q %artist)
 #FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
@@ -19,17 +19,17 @@ Bits=$(du $IMG0|awk '{print $1)')
 
 if [ ! $Bits ]; then
     
-    $HOME/scripts/Resice.sh
+    $HOME/.moc/scripts/Resice.sh
 
 fi    
 
 if [ $cover != $IMG0 ]; then
 
-    notify-send --icon="/home/jorge/configuracion/icon-moc.png" "$1:" "$2" #Para musica sin cover
+    notify-send --icon="$HOME/.moc/scripts/icon-moc.png" "$1:" "$2" #Para musica sin cover
 
 elif [ ! "$2" ] || [ ! "$IMG0" ]; then
 
-    notify-send --icon="/home/jorge/configuracion/icon-moc.png" "$3" #Para musica sin metadatos y sin cover 
+    notify-send --icon="$HOME/.moc/scripts/icon-moc.png" "$3" #Para musica sin metadatos y sin cover 
 
 elif [ ! "$2" ]; then
 
