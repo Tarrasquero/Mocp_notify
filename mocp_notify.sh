@@ -9,7 +9,7 @@
 #ARTIST=$(mocp -Q %artist)
 FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
 PWD=$HOME/Musica/
-LAST=$(echo "$PWD/`mocp -i|grep File:|cut -d '/' -f 5`")
+LAST=$(echo "$PWD`mocp -i|grep File:|cut -d '/' -f 5`")
 cd "$LAST"
 IMG0=$(ls -R|grep -i -f $HOME/scripts/patron.txt|shuf -n1)
 cp "$LAST/$IMG0" "/tmp/cover.jpg"
