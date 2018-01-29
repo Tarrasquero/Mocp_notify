@@ -7,25 +7,37 @@
 #OnSongChange = "$HOME/scripts/mocp_notify.sh %a %t %f"
 #SONG=$(mocp -Q %song)
 #ARTIST=$(mocp -Q %artist)
-FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
+#FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
 PWD=$HOME/Musica/
 LAST=$(echo "$PWD`mocp -i|grep File:|cut -d '/' -f 5`")
 cd "$LAST"
-IMG0=$(ls -R|grep -i -f $HOME/scripts/patron.txt|shuf -n1)
+IMG0=$(ls|grep -i *.jpg)
+IMG="/tmp/cover.jpg"
+cover="cover.jpg"
 cp "$LAST/$IMG0" "/tmp/cover.jpg"
-IMG=/tmp/cover.jpg
-X=$(mat --display "$IMG"|grep "Exif Image Width:"|cut -d ' ' -f 4)
-Y=$(mat --display "$IMG"|grep "Exif Image Height:"|cut -d ' ' -f 4)
-GEOMETRY=$(echo "$X"x"$Y")
-i="100x100"
+Bits=$(du $IMG0|awk '{print $1)')
 
-if [ $i != $GEOMETRY ]; then
-    mogrify -resize 100x100! "$IMG"
+if [ ! $Bits ]; then
+    
+    $HOME/configuracion/Resice.sh
+
 fi    
 
-if [ "$2" ]; then
-    notify-send -i "$IMG" "$1:" "$2" 
-else 
-    notify-send --icon="$IMG" "$FILE" #Para musica sin metadatos
+if [ $cover != $IMG0 ]; then
+
+    notify-send --icon="/home/jorge/configuracion/icon-moc.png" "$1:" "$2" #Para musica sin cover
+
+elif [ ! "$2" ] || [ ! "$IMG0" ]; then
+
+    notify-send --icon="/home/jorge/configuracion/icon-moc.png" "$3" #Para musica sin metadatos y sin cover 
+
+elif [ ! "$2" ]; then
+
+    notify-send --icon="$IMG" "$3"
+
+elif [ "$2" ]; then
+
+    notify-send --icon="$IMG" "$1:" "$2"
+
 fi
 exit
