@@ -19,7 +19,7 @@ Bits=$(du $IMG0|awk '{print $1)')
 
 if [ ! $Bits ]; then
     
-    $HOME/configuracion/Resice.sh
+    $HOME/scripts/Resice.sh
 
 fi    
 
