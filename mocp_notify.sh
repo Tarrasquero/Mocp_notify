@@ -14,7 +14,6 @@ cover="/cover.jpg"
 cd "$LAST"
 IMG0=$(ls|grep -i *.jpg)
 IMG=$(echo '"$LAST$cover"'
-cp "$LAST/$IMG0" "/tmp/cover.jpg"
 Bits=$(du $IMG0|awk '{print $1)')
 
 if [ ! $Bits ]; then
