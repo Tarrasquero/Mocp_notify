@@ -5,8 +5,8 @@
 #Puedes mejorarlo?. Házmelo saber: yopuebla@gmail.com
 #Configuración en config
 #OnSongChange = "$HOME/.moc/scripts/mocp_notify.sh %a %t %f"
-SONG=$(mocp -Q %song)
-ARTIST=$(mocp -Q %artist)
+#SONG=$(mocp -Q %song)
+#ARTIST=$(mocp -Q %artist)
 #FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
 PWD=$HOME/Musica/
 cover="cover.jpg"
@@ -34,7 +34,7 @@ elif [ != $2 ]; then
 
     notify-send --icon="$IMG" "$3"
 
-elif [ "$SONG" ]; then
+elif [ "$2" ]; then
 
     notify-send -i "$IMG" "$1:" "$2\n$4"
 
