@@ -12,10 +12,18 @@ PWD=$HOME/Musica/
 cover="cover.jpg"
 LAST=$(echo "/`mocp -i|grep File:|cut -d '/' -f 2-5`")
 cd "$LAST"
-IMG0=$(ls|grep -i *.jpg)
-IMG=$(echo "$LAST/$cover")
+IMG0=$(ls|grep -i cover.jpg)
 Bits=$(du $IMG0|awk '{print $1}')
 
+if [ "$IMG0" ]; then
+    
+    IMG=$(echo "$LAST/$cover")
+
+else
+
+    IMG=$(echo "/home/jorge/.moc/scripts/icon-moc.png")
+
+fi
 if [ $Bits -gt "100" ]; then
     
     $HOME/.moc/scripts/Resice.sh
@@ -24,15 +32,15 @@ fi
 
 if [ $IMG0 != $cover ]; then
 
-    notify-send --icon="$HOME/.moc/scripts/icon-moc.png" "$1:" "$2\n$4" #Para musica sin cover
+    notify-send -i "$icon" "$1:" "$2" #Para musica sin cover
 
-elif [ != $2] || [ ! "$IMG0" ]; then
+elif [ != $2 ] || [ != "$IMG0" ]; then
 
-    notify-send --icon="$HOME/.moc/scripts/icon-moc.png" "$3" #Para musica sin metadatos y sin cover 
+    notify-send -i "$icon" "$3" #Para musica sin metadatos y sin cover 
 
 elif [ != $2 ]; then
 
-    notify-send --icon="$IMG" "$3"
+    notify-send -i "$IMG" "$3"
 
 elif [ "$2" ]; then
 
