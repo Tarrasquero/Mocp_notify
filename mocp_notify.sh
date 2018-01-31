@@ -9,11 +9,11 @@
 #ARTIST=$(mocp -Q %artist)
 #FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
 PWD=$HOME/Musica/
-LAST=$(echo "$PWD`mocp -i|grep File:|cut -d '/' -f 5`")
+LAST=$(echo "$PWD`mocp -i|grep File:|cut -d '/' -f 2-5`")
+cover="/cover.jpg"
 cd "$LAST"
 IMG0=$(ls|grep -i *.jpg)
-IMG="/tmp/cover.jpg"
-cover="cover.jpg"
+IMG=$(echo '"$LAST$cover"'
 cp "$LAST/$IMG0" "/tmp/cover.jpg"
 Bits=$(du $IMG0|awk '{print $1)')
 
