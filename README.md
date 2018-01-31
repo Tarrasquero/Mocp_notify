@@ -7,7 +7,8 @@
  - mat 
  - imagemagick 
  - libnotify-bin
-
+ - Es necesario que la `imagen` tenga por nombre `cover.jpg`
+ 
 ## Novedades:
 
 - Redimensionado de imágenes a 100x100.
