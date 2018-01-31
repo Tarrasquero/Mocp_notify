@@ -10,10 +10,10 @@
 #FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
 PWD=$HOME/Musica/
 LAST=$(echo "$PWD`mocp -i|grep File:|cut -d '/' -f 2-5`")
-cover="/cover.jpg"
+cover="cover.jpg"
 cd "$LAST"
 IMG0=$(ls|grep -i *.jpg)
-IMG=$(echo '"$LAST$cover"'
+IMG=$(echo '"$LAST/$cover"'
 Bits=$(du $IMG0|awk '{print $1)')
 
 if [ ! $Bits ]; then
