@@ -1,6 +1,8 @@
 # MOCP Notify BETA :)
 
-![Mocp_notify en acción](https://github.com/Tarrasquero/Mocp_notify/blob/master/screenshot.png?raw=true) 
+![Mocp_notify en acción](https://github.com/Tarrasquero/Mocp_notify/blob/master/screenshot.png?raw=true)
+
+![Mocp notify ico](https://github.com/Tarrasquero/Mocp_notify/blob/master/Screenshot-ico.png)
 
 ## Dependencias:
 
