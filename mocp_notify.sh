@@ -32,11 +32,11 @@ fi
 
 if [ $IMG0 != $cover ]; then
 
-    notify-send -i "$icon" "$1:" "$2" #Para musica sin cover
+    notify-send -i "$IMG" "$1:" "$2" #Para musica sin cover
 
 elif [ != $2 ] || [ != "$IMG0" ]; then
 
-    notify-send -i "$icon" "$3" #Para musica sin metadatos y sin cover 
+    notify-send -i "$IMG" "$3" #Para musica sin metadatos y sin cover 
 
 elif [ != $2 ]; then
 
