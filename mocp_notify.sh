@@ -28,15 +28,12 @@ if [ $Bits -gt "100" ]; then
     
     $HOME/.moc/scripts/Resice.sh
 
-fi    
+fi
 
-if [ $IMG0 != $cover ]; then
-
-    notify-send -i "$IMG" "$1:" "$2\n$4" #Para musica sin cover
 
 elif [ != $2 ] || [ != "$IMG0" ]; then
 
-    notify-send -i "$IMG" "$3" #Para musica sin metadatos y sin cover 
+    notify-send -i "$IMG" "$3" #Para musica sin metadatos o/y sin cover 
 
 elif [ "$2" ]; then
 
