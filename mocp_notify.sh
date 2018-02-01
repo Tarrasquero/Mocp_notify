@@ -36,7 +36,7 @@ if [ "$2" ]; then
 
 else
 
-    notify-send -i "$IMG" "$3" #Para musica sin metadatos o/y sin cover
+    notify-send -i "$IMG" "$3"
 
 fi
 exit
