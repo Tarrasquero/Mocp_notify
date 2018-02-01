@@ -30,14 +30,13 @@ if [ $Bits -gt "100" ]; then
 
 fi
 
-
-if [ != $2 ] || [ != "$IMG0" ]; then
-
-    notify-send -i "$IMG" "$3" #Para musica sin metadatos o/y sin cover 
-
-elif [ "$2" ]; then
+if [ "$2" ]; then
 
     notify-send -i "$IMG" "$1:" "$2\n$4"
+
+else
+
+    notify-send -i "$IMG" "$3" #Para musica sin metadatos o/y sin cover
 
 fi
 exit
