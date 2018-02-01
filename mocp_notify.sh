@@ -21,7 +21,7 @@ if [ "$IMG0" ]; then
 
 else
 
-    IMG=$(echo "/home/jorge/.moc/scripts/icon-moc.png")
+    IMG=$(echo "$HOME/.moc/scripts/icon-moc.png")
 
 fi
 if [ $Bits -gt "100" ]; then
