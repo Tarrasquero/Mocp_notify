@@ -8,7 +8,6 @@
 #SONG=$(mocp -Q %song)
 #ARTIST=$(mocp -Q %artist)
 #FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
-PWD=$HOME/Musica/
 cover="cover.jpg"
 LAST=$(echo "/`mocp -i|grep File:|cut -d '/' -f 2-5`")
 cd "$LAST"
