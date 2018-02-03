@@ -4,7 +4,7 @@
 #IRC: Freenode. Channels: #debian-es; #devuan-mx.
 #Puedes mejorarlo?. Házmelo saber: yopuebla@gmail.com
 #Configuración en config
-#OnSongChange = "$HOME/.moc/scripts/mocp_notify.sh %a %t %f"
+#OnSongChange = "$HOME/.moc/scripts/mocp_notify.sh %a %t %f %r"
 #SONG=$(mocp -Q %song)
 #ARTIST=$(mocp -Q %artist)
 #FILE=$(mocp -i|grep File:|cut -d '/' -f 6)
