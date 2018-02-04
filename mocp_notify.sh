@@ -12,7 +12,13 @@ cover="cover.jpg"
 LAST=$(echo "/`mocp -i|grep File:|cut -d '/' -f 2-5`")
 cd "$LAST"
 IMG0=$(ls|grep -i cover.jpg)
-Bits=$(du $IMG0|awk '{print $1}')
+X=$(mat --display "$IMG0"|grep "Exif Image Width:"|cut -d ' ' -f 4)
+
+if [ "$X" -ge "100" ]; then
+    
+    $HOME/.moc/scripts/Resice.sh
+
+fi
 
 if [ "$IMG0" ]; then
     
@@ -23,11 +29,7 @@ else
     IMG=$(echo "$HOME/.moc/scripts/icon-moc.png")
 
 fi
-if [ $Bits -gt "100" ]; then
-    
-    $HOME/.moc/scripts/Resice.sh
 
-fi
 
 if [ "$2" ]; then
 
