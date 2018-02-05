@@ -9,7 +9,7 @@
  - mat 
  - imagemagick 
  - libnotify-bin
- - Es necesario que la `imagen` tenga por nombre `cover.jpg`
+ - ~~Es necesario que la `imagen` tenga por nombre `cover.jpg`~~
  
 ## Novedades:
 
@@ -27,4 +27,4 @@ Buscar la linea: `#OnSongChange=` que debería quedar parecida a esta: `OnSongCh
 
 ## Bugs:
 
-Lástima que en los álbumes de varios CDs la imagen a mostrar tiene que estar en la raíz del álbum en si y ser renombrada a cover.jpg. ~~La raíz del álbum puede contener solo un `.jpg` para mostrar en la notificación.~~
+Lástima que en los álbumes de varios CDs la imagen a mostrar tiene que estar en la raíz del álbum en si ~~y ser renombrada a cover.jpg.~~ ~~La raíz del álbum puede contener solo un `.jpg` para mostrar en la notificación.~~
