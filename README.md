@@ -15,7 +15,7 @@
 
 - Redimensionado de imágenes a 100x100.
 - No es necesario renombrar el `jpg` ni que se encuentre en la raiz de la carpeta `album` ni tan siquiera que solo haya un solo `jpg`.
-- Soporta espacios en los nombres de la `imagen` 
+- Soporta espacios en los nombres de la `imagenes` 
 ## Configuración para notificación de mocp:
 
     #apt-get install mat imagemagick libnotify-bin
