@@ -14,6 +14,7 @@
 ## Novedades:
 
 - Redimensionado de imágenes a 100x100.
+- No es necesario renombrar el `jpg` ni que se encuentre en la raiz de la carpeta `album` ni tan siquiera que solo haya un solo `jpg`.
 
 ## Configuración para notificación de mocp:
 
@@ -27,4 +28,4 @@ Buscar la linea: `#OnSongChange=` que debería quedar parecida a esta: `OnSongCh
 
 ## Bugs:
 
-Lástima que en los álbumes de varios CDs la imagen a mostrar tiene que estar en la raíz del álbum en si ~~y ser renombrada a cover.jpg.~~ ~~La raíz del álbum puede contener solo un `.jpg` para mostrar en la notificación.~~
+~~Lástima que en los álbumes de varios CDs la imagen a mostrar tiene que estar en la raíz del álbum en si~~ ~~y ser renombrada a cover.jpg.~~ ~~La raíz del álbum puede contener solo un `.jpg` para mostrar en la notificación.~~
