@@ -1,4 +1,4 @@
-# MOCP Notify BETA :)
+# MOCP Notify
 
 ![Mocp_notify en acción](https://github.com/Tarrasquero/Mocp_notify/blob/master/screenshot.png?raw=true)
 
