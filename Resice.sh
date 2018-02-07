@@ -1,8 +1,7 @@
 LAST=$(echo "/`mocp -i|grep File:|cut -d '/' -f 2-5`")
 cd "$LAST"
-I=$(ls|grep -i -e *.jpg)
 if [ -f "$I" ]; then
-    IMG0=$(find . -name '*.jpg'|shuf -n1|xargs -0) #$(ls|grep -i -e *.jpg)  #$(ls|grep -i -e *.jpg -e *.png -e *.jpeg)
+    IMG0=$(find . -name '*.jpg'|shuf -n1|xargs -0)
 else
     IMG0=$(find . -name '*.jpg' |cut -c2-|shuf -n1|xargs -0)   
 fi
