@@ -1,9 +1,9 @@
 LAST=$(echo "/`mocp -i|grep File:|cut -d '/' -f 2-5`")
 cd "$LAST"
 if [ -f "$I" ]; then
-    IMG0=$(find . -name '*.jpg'|shuf -n1|xargs -0)
+    IMG0=$(find . -name '*.jpg' -or -name '*.jpeg' -or -name '*.png'|shuf -n1|xargs -0)
 else
-    IMG0=$(find . -name '*.jpg' |cut -c2-|shuf -n1|xargs -0)   
+    IMG0=$(find . -name '*.jpg' -or -name '*.jpeg' -or -name '*.png'|cut -c2-|shuf -n1|xargs -0)   
 fi
 IMG=$(echo "$LAST/$IMG0")
 X=$(mat --display "$IMG"|grep "Exif Image Width:"|cut -d ' ' -f 4)
