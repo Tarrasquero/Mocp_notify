@@ -19,7 +19,7 @@ fi
  
 X=$(mat --display "$IMG0"|grep "Exif Image Width:"|cut -d ' ' -f 4)
 
-if [ "$X" -ge "100" ]; then
+if [ "$X" != "100" ]; then
     $HOME/.moc/scripts/Resice.sh
 fi
 
