@@ -20,8 +20,9 @@
 
     #apt-get install mat imagemagick libnotify-bin
  
-Extraer `/usr/share/doc/moc/example/config.example.gz` en `~/.moc` con el nombre `config`.  
-
+Extraer `/usr/share/doc/moc/example/config.example.gz` en `~/.moc` con el nombre `config`.
+Mover scripts: `notify_mocp.sh` y `Resize.sh` a `~/.moc/scripts`.
+`mkdir $HOME/.moc/scripts ; mv notify_mocp.sh Resize.sh $HOME/.moc/scripts`
 Otorgar permisos de ejecución:  `chmod +x mocp_notify.sh`
 
 Buscar la linea: `#OnSongChange=` que debería quedar parecida a esta: `OnSongChange= "$HOME/scripts/mocp_notify.sh %a %t %f %r"` 
