@@ -1,3 +1,4 @@
+#!bin/sh
 LAST=$(echo "/`mocp -i|grep File:|cut -d '/' -f 2-5`")
 cd "$LAST"
 I=$(find . -name '*.jpg' -or -name '*.jpeg' -or -name '*.png')
