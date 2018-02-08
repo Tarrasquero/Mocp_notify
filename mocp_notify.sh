@@ -20,7 +20,7 @@ fi
 X=$(mat --display "$IMG0"|grep "Exif Image Width:"|cut -d ' ' -f 4)
 
 if [ "$X" != "100" ]; then
-    $HOME/.moc/scripts/Resice.sh
+    $HOME/.moc/scripts/Resize.sh
 fi
 
 for cover in "$IMG0"; do
