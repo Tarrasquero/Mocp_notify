@@ -9,7 +9,7 @@
  - mat 
  - imagemagick 
  - libnotify-bin
- - ~~Es necesario que la `imagen` tenga por nombre `cover.jpg`~~
+
  
 ## Novedades:
 
@@ -26,7 +26,3 @@ Mover scripts: `mocp_notify.sh` y `Resize.sh` a `~/.moc/scripts`.
 Otorgar permisos de ejecución:  `chmod +x mocp_notify.sh ; chmod +x Resize.sh`
 
 Buscar la linea: `#OnSongChange=` que debería quedar parecida a esta: `OnSongChange= "$HOME/scripts/mocp_notify.sh %a %t %f %r"` 
-
-## Bugs:
-
-~~Lástima que en los álbumes de varios CDs la imagen a mostrar tiene que estar en la raíz del álbum en si~~ ~~y ser renombrada a cover.jpg.~~ ~~La raíz del álbum puede contener solo un `.jpg` para mostrar en la notificación.~~
